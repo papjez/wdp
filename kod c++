@@ -87,3 +87,45 @@ vector<int>unikalnosc(vector<int>tab)
     return wynik;
 }
 wsadzic te unikalnosc przed int main
+
+int suma(vector<int>tab)
+{
+    int wynik = 0;
+    for (int i = 0; i < tab.size(); i++)
+    {
+        wynik = wynik + tab[i];
+        //wynik+=tab[i]; operator dokladania, to to samo co wyzej
+    }
+    return wynik;
+}
+
+int main()
+{
+    vector<int>tab = { 1,6,10,8,3 };
+    cout << suma(tab);
+    
+}
+double srednia(vector<int>tab)
+{
+    double wynik = suma(tab);
+    return wynik / tab.size();
+}
+int main()
+{
+    vector<int>tab = { 8,7,2,4,5 };
+    cout << suma(tab) << endl;
+    cout << srednia(tab);
+    
+}
+vector<int>podzielne(vector<int>tab)
+{
+    vector<int>wynik;
+    for (int i = 0; i < tab.size(); i++)
+    {
+        if (tab[i]%4==0)
+        {
+            wynik.push_back(tab[i]);
+        }
+    }
+    return wynik;
+}
