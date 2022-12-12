@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include<map>
 
 using namespace std;
 
@@ -140,3 +141,32 @@ vector<int>podzielne(vector<int>tab, int dzielnik, int reszta = 0)
         }
     }
     return wynik;
+
+ W DOMU
+ --------------------------
+ - zmienic wszystkie for na while
+ - operacje na plikach(wczytywac np vector string) + zapisywanie 
+ --------------------------
+ //program ma zwrocic ile razy powtarza sie kazda liczba z tab4
+//8 powtarza sie 2 razy
+//7 powtarza sie 3 razy
+//1 powtarza sie 1 raz
+//2 powtarza sie 3 razy
+przyklad uzycia map
+map<int,int>m;
+m.insert({1,5});
+m.insert({-2000000, 2});
+cout<<m[-2000000]
+wtedy daje 2
+dodatkowo dodac 
+#include<map>
+zeby zmienic mozna napisac
+m[-2000000]-8;
+z petla for
+for(auto& el; m)
+{
+cout<<el.first<<",";
+cout<<el.second<<",";
+}
+ vector<int>tab = {8,7,1,2,2,7,8,7,2}
+ 
