@@ -166,7 +166,15 @@ z petla for
 for(auto& el; m)
 {
 cout<<el.first<<",";
-cout<<el.second<<",";
+cout<<el.second<<" ";
 }
+dla if
+if(m.find(klucz)!=m.endl())
+{
+// gdy znalazlo
+}
+wejscoiwka bedzie dla map oraz for
+w domu, zmodyfikowac funkcje unikalmnosc aby dostac czesctosc
  vector<int>tab = {8,7,1,2,2,7,8,7,2}
- 
+map<int,int>czestosc(vector<int>tab)
+
