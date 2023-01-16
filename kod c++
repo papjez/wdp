@@ -177,4 +177,14 @@ wejscoiwka bedzie dla map oraz for
 w domu, zmodyfikowac funkcje unikalmnosc aby dostac czesctosc
  vector<int>tab = {8,7,1,2,2,7,8,7,2}
 map<int,int>czestosc(vector<int>tab)
+#include <iostream>
+#include <string>
+using namespace std;
 
+int main()
+{
+	string a = "Ala ma kota";
+	cout << a << endl;
+	a.erase(remove(a.begin(), a.end(), 'a'), a.end());
+	cout << a << " - po usunieciu 'a'";
+}
